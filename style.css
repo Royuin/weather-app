@@ -127,7 +127,8 @@ main {
   margin-right: 100px;
 }
 
-.wind-speed {
+.wind-speed,
+.humidity {
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.65);
   width: 20rem;
