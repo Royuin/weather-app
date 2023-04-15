@@ -126,3 +126,12 @@ main {
   width: auto;
   margin-right: 100px;
 }
+
+.wind-speed {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 20rem;
+  border-top-left-radius: 8px;
+  padding: 5px 0 5px 15px;
+  font-size: 1.5rem;
+}
