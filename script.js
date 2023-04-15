@@ -7,7 +7,11 @@ async function getWeatherData(location) {
   ).then(function (response) {
     return response.json();
   });
-  console.log(response);
+  console.log(response.location.region, response.location.country);
+  console.log(
+    response.current.temp_c + '\u00B0C',
+    response.current.temp_f + '\u00B0F'
+  );
 }
 
 getWeatherData('chicago');
