@@ -3,6 +3,7 @@ const feelsLike = document.querySelector('.feels-like');
 const locationNode = document.querySelector('.location');
 const conditionNode = document.querySelector('.condition-text');
 const conditionIcon = document.querySelector('.condition-icon');
+const windSpeedNode = document.querySelector('.wind-speed');
 
 function displayWeatherData(data) {
   tempNode.textContent = data.current.temp_c + '\u00B0C';
@@ -12,9 +13,11 @@ function displayWeatherData(data) {
     `${data.location.name}, ` +
     `${data.location.region}, ` +
     `${data.location.country} `;
+
   conditionNode.textContent = data.current.condition.text;
   conditionIcon.src = data.current.condition.icon;
-  console.log(data.current.condition.icon);
+
+  windSpeedNode.textContent = `Wind speed ${data.current.wind_kph} km/h`;
 }
 
 async function getWeatherData(location) {
