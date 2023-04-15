@@ -110,7 +110,8 @@ main {
   align-items: end;
 }
 
-.condition {
+.condition,
+.time {
   display: flex;
   align-items: center;
   justify-content: space-around;
