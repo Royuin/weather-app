@@ -7,7 +7,11 @@ async function getWeatherData(location) {
   ).then(function (response) {
     return response.json();
   });
-  console.log(response.location.region, response.location.country);
+  console.log(
+    response.location.name,
+    response.location.region,
+    response.location.country
+  );
   console.log(
     response.current.temp_c + '\u00B0C',
     response.current.temp_f + '\u00B0F'
@@ -15,3 +19,11 @@ async function getWeatherData(location) {
 }
 
 getWeatherData('chicago');
+
+const submitBtn = document.querySelector('.submit-button');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const inputValue = document.getElementById('location').value;
+  getWeatherData(inputValue);
+});
