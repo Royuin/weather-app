@@ -16,3 +16,34 @@
   top: 0;
   bottom: 0;
 }
+
+form {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 30rem;
+  color: #eee;
+  padding: 25px;
+  border-top-right-radius: 8px;
+}
+
+input,
+.submit-button {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+}
+
+.submit-button {
+  width: 25px;
+  display: grid;
+  cursor: pointer;
+}
+
+.form-content {
+  display: flex;
+  height: 25px;
+  gap: 3px;
+  margin-left: 50px;
+}
