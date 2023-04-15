@@ -1,5 +1,6 @@
 const tempNode = document.querySelector('.temp');
 const feelsLike = document.querySelector('.feels-like');
+const locationNode = document.querySelector('.location');
 
 async function getWeatherData(location) {
   const response = await fetch(
@@ -22,6 +23,10 @@ async function getWeatherData(location) {
   );
   tempNode.textContent = response.current.temp_c + '\u00B0C';
   feelsLike.textContent += response.current.feelslike_c + '\u00B0C';
+  locationNode.textContent +=
+    `${response.location.name}, ` +
+    `${response.location.region}, ` +
+    `${response.location.country} `;
 }
 
 getWeatherData('chicago');
