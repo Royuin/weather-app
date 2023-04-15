@@ -1,3 +1,5 @@
+const tempNode = document.querySelector('.temp');
+
 async function getWeatherData(location) {
   const response = await fetch(
     `https://api.weatherapi.com/v1/current.json?key=a2a56f72ff4949fabf611158231204&q=${location}&aqi=no`,
@@ -16,6 +18,7 @@ async function getWeatherData(location) {
     response.current.temp_c + '\u00B0C',
     response.current.temp_f + '\u00B0F'
   );
+  tempNode.textContent = response.current.temp_c + '\u00B0C';
 }
 
 getWeatherData('chicago');
