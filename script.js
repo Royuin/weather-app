@@ -4,6 +4,7 @@ const locationNode = document.querySelector('.location');
 const conditionNode = document.querySelector('.condition-text');
 const conditionIcon = document.querySelector('.condition-icon');
 const windSpeedNode = document.querySelector('.wind-speed');
+const humidityNode = document.querySelector('.humidity');
 
 function displayWeatherData(data) {
   tempNode.textContent = data.current.temp_c + '\u00B0C';
@@ -18,6 +19,8 @@ function displayWeatherData(data) {
   conditionIcon.src = data.current.condition.icon;
 
   windSpeedNode.textContent = `Wind speed ${data.current.wind_kph} km/h`;
+
+  humidityNode.textContent = `Humidity ${data.current.humidity}%`;
 }
 
 async function getWeatherData(location) {
