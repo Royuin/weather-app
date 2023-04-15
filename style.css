@@ -53,6 +53,11 @@ input,
   margin-left: 50px;
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .temp-container {
   margin-top: 50px;
   background-color: rgba(0, 0, 0, 0.65);
@@ -87,4 +92,14 @@ input,
   border-top-right-radius: 8px;
   padding: 10px;
   padding-left: 25px;
+}
+
+.location {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 50rem;
+  border-top-left-radius: 8px;
+  padding: 25px;
+  padding-left: 25px;
+  font-size: 2rem;
 }
