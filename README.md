@@ -8,3 +8,10 @@ This project utilizes the weather api to show the weather and time. User can use
 
 - Weather api
 - Switching between Metric and Imperial systems
+
+## What was learned
+
+- Asynchronous Code
+- Promises
+- Api's
+- Aysnc and Await
