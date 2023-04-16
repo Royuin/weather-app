@@ -70,7 +70,7 @@ const submitBtn = document.querySelector('.submit-button');
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const inputValue = document.getElementById('location').value;
-  getWeatherData(inputValue);
+  getWeatherData(inputValue, tempBtn.textContent);
 });
 
 tempBtn.addEventListener('click', () => {
