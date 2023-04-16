@@ -47,19 +47,26 @@ function displayWeatherDataFahrenheit(data) {
 }
 
 async function getWeatherData(location, measurement) {
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=3857d376c23d4bca9d400035231604&q=${location}&aqi=no`,
-    {
-      mode: 'cors',
-    }
-  ).then(function (response) {
-    return response.json();
-  });
+  const errorMessage = document.querySelector('.error');
+  try {
+    const response = await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=3857d376c23d4bca9d400035231604&q=${location}&aqi=no`,
+      {
+        mode: 'cors',
+      }
+    ).then(function (response) {
+      return response.json();
+    });
 
-  if (measurement === 'C') {
-    displayWeatherDataCelsius(response);
-  } else if (measurement === 'F') {
-    displayWeatherDataFahrenheit(response);
+    errorMessage.style.display = 'none';
+
+    if (measurement === 'C') {
+      displayWeatherDataCelsius(response);
+    } else if (measurement === 'F') {
+      displayWeatherDataFahrenheit(response);
+    }
+  } catch (e) {
+    errorMessage.style.display = 'flex';
   }
 }
 
