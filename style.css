@@ -64,6 +64,16 @@ input {
   align-items: center;
 }
 
+.error {
+  background-color: var(--background-color);
+  width: 20rem;
+  border-bottom-right-radius: 8px;
+  padding: 10px 15px 5px 15px;
+  font-size: 0.9rem;
+  color: rgba(249, 122, 122, 0.998);
+  display: none;
+}
+
 main {
   display: flex;
   justify-content: space-between;
