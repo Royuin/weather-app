@@ -6,7 +6,9 @@ This project utilizes the weather api to show the weather and time. User can use
 
 ## Features
 
-- Weather api
+- Displaying temperature and time
+- Displaying Weather conditions
+- Displaying humidity and wind speed
 - Switching between Metric and Imperial systems
 
 ## What was learned
@@ -15,3 +17,9 @@ This project utilizes the weather api to show the weather and time. User can use
 - Promises
 - Api's
 - Aysnc and Await
+
+## Technologies Used
+
+- Html/Css
+- Javascript
+- Weather api
