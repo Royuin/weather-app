@@ -28,7 +28,7 @@ function displayWeatherData(data) {
 
 async function getWeatherData(location) {
   const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=a2a56f72ff4949fabf611158231204&q=${location}&aqi=no`,
+    `https://api.weatherapi.com/v1/current.json?key=3857d376c23d4bca9d400035231604&q=${location}&aqi=no`,
     {
       mode: 'cors',
     }
