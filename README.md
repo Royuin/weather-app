@@ -23,3 +23,9 @@ This project utilizes the weather api to show the weather and time. User can use
 - Html/Css
 - Javascript
 - Weather api
+
+## TO DO
+
+- Make responsive
+- Add chance of rain
+- Add weekly forecast
